@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeux de dé</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-text class="ion-text-center ion-text-uppercase">
+                    <p id="new-game" class="button"><span class="icon icon-add"></span>new game</p>
+                </ion-text>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size-xs="12" size-sm="5">
+                <ion-text class="ion-text-center ion-text-uppercase">
+                    <p class="player playerName-0">Player 1<span class="player-0 active-player"></span></p>
+                </ion-text>
+                <ion-text class="ion-text-center" color="danger">
+                    <p id="score-0" class="score">0</p>
+                </ion-text>
+                <ion-row>
+                    <ion-col>
+                        <div class="current-score">
+                            <ion-text class="ion-text-center ion-text-uppercase">
+                                <p class="current-text">current</p>
+                            </ion-text>
+                            <ion-text class="ion-text-center" color="light">
+                                <p id="current-0" class="current-number">0</p>
+                            </ion-text>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+            <ion-col size-sm="2">
+                <ion-row id="dice" class="ion-justify-content-center">
+                    <!-- ---------Render the image of the dice here ----------------------------------->
+                </ion-row>
+                <div class="action">
+                    <ion-text class="ion-text-center ion-text-uppercase">
+                        <p id="reload" class="button"><span class="icon icon-reload"></span>roll dice</p>
+                    </ion-text>
+                    <ion-text class="ion-text-center ion-text-uppercase">
+                        <p id="download" class="button"><span class="icon icon-download"></span>hold</p>
+                    </ion-text>
+                </div>
+            </ion-col>
+            <ion-col size-xs="12" size-sm="5">
+                <ion-text class="ion-text-center ion-text-uppercase">
+                    <p class="player playerName-1">Player 2 <span class="player-1"></span></p>
+                </ion-text>
+                <ion-text class="ion-text-center" color="danger">
+                    <p id="score-1" class="score">0</p>
+                </ion-text>
+                <ion-row>
+                    <ion-col>
+                        <div class="current-score">
+                            <ion-text class="ion-text-center ion-text-uppercase">
+                                <p class="current-text">current</p>
+                            </ion-text>
+                            <ion-text class="ion-text-center" color="light">
+                                <p id="current-1" class="current-number">0</p>
+                            </ion-text>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <script src="./Script.js"></script>
+</body>
+
+</html>
